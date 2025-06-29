@@ -1,0 +1,214 @@
+/* Microsoft Empower Portal Styles */
+
+:root {
+  --ms-blue: #0078D4;
+  --ms-white: #fff;
+  --ms-gray: #f4f4f4;
+  --ms-dark: #222;
+  --ms-font: 'Segoe UI', 'Inter', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ms-font);
+  background: var(--ms-white);
+  color: var(--ms-dark);
+}
+
+a {
+  color: var(--ms-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: var(--ms-white);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--ms-blue);
+  letter-spacing: 1px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navbar-menu a {
+  font-weight: 500;
+}
+
+.hero {
+  background: var(--ms-blue);
+  color: var(--ms-white);
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  animation: fadeIn 1s;
+}
+
+.hero h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.3rem;
+}
+
+.cta-btn {
+  background: var(--ms-white);
+  color: var(--ms-blue);
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.cta-btn:hover {
+  background: #e8e8e8;
+}
+
+.section {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  background: var(--ms-gray);
+  border-radius: 12px;
+  animation: fadeIn 1.2s;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--ms-blue);
+}
+
+.highlights {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  background: var(--ms-white);
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  padding: 1.2rem 2rem;
+  min-width: 230px;
+  flex: 1;
+  text-align: center;
+}
+
+.flags {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem 0 0.5rem 0;
+}
+
+.flag {
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: var(--ms-font);
+}
+
+input[type="file"] {
+  font-size: 1rem;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+
+button[type="submit"] {
+  background: var(--ms-blue);
+  color: var(--ms-white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #005fa3;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 2rem 1rem 1rem 1rem;
+  background: var(--ms-gray);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.footer-logo {
+  vertical-align: middle;
+  height: 28px;
+  margin-bottom: -6px;
+}
+
+.footer-links {
+  margin: 0.7rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .navbar-menu {
+    gap: 0.7rem;
+  }
+  .highlights {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .section {
+    padding: 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(18px);}
+  to { opacity: 1; transform: translateY(0);}
+}
